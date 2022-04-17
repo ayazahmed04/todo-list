@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO LIST</title>
+  </head>
+  <body>
+    <!-- <h1>It's a <%= kindOfDay%></h1> -->
+    <!-- <% if ( kindOfDay == "Saturday" || kindOfDay == "Sunday") { %>
+    <h1 style="color: purple"><%= kindOfDay %> ToDo List</h1>
+    <p>This is the WEEKEND</p>
+    <% } else { %>
+    <h1 style="color: aliceblue"><%= kindOfDay %> ToDo List</h1>
+    <p>This is the weekday</p> -->
+    <!-- <% } %> -->
+    <h1><%= kindOfDay %></h1>
+    <ul>
+      <!-- <li>Buy FOOD</li>
+      <li>Cook FOOD</li>
+      <li>Eat FOOD</li> -->
+      <!-- <li><%= add_elem %></li> -->
+      <% for( let i = 0 ; i < add_elem.length ; i ++){ %>
+      <li><%= add_elem[i] %></li>
+      <% }%>
+    </ul>
+
+    <form action="/" method="post">
+      <input autofocus type="text" name="list" id="list_item" />
+      <button type="submit">Add ITEM</button>
+    </form>
+  </body>
+</html>
